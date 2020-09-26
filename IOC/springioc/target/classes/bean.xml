@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+
+">
+
+    <!--把对象的创建交给spring来管理-->
+    <bean id="accountService" class="com.itcast.service.impl.AccountServiceImpl" scope="prototype"></bean>
+    <bean id="accountDao" class="com.itcast.dao.impl.AccountDaoImpl"></bean>
+
+    <!--使用工厂方法和静态工厂方法创建对象-->
+    <!--第一种-->
+    <!--<bean id="accountService" class="com.itcast.service.impl.AccountServiceImpl2"></bean>-->
+    <!--第二种-->
+    <!--
+    <bean id="instancefactory" class="com.itcast.factory.InstanceFactory"></bean>
+    <bean id="accountService" factory-bean="instancefactory" factory-method="getAccountService"></bean>
+    -->
+    <!--第三种-->
+    <!--<bean id="accountService" class="com.itcast.factory.StaticFactroy" factory-method="getAccountService"></bean>-->
+
+</beans>
