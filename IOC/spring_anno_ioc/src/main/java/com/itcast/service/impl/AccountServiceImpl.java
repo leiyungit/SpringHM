@@ -1,13 +1,19 @@
 package com.itcast.service.impl;
 
+import com.itcast.dao.IAccountDao;
 import com.itcast.service.IAccountService;
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 
 // 它的默认值是当前类名，且首字母改小写
-@Component
+@Service
 public class AccountServiceImpl implements IAccountService {
-    //private IAccountDao dao;
+    @Autowired
+    private IAccountDao dao = null;
 
     public  AccountServiceImpl(){
 
@@ -16,7 +22,17 @@ public class AccountServiceImpl implements IAccountService {
 
     public void savaAccount() {
 
-        //dao.sava();
-        System.out.println("111");
+        dao.sava();
+        //System.out.println("111");
+    }
+
+    @PostConstruct
+    public void inti(){
+        System.out.println("init ...");
+    }
+
+    @PreDestroy
+    public void destroy(){
+        System.out.println("destroy....");
     }
 }

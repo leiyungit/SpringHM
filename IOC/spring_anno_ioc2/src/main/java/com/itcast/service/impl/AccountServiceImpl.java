@@ -13,7 +13,7 @@ public class AccountServiceImpl implements IAccountService {
 
         System.out.println("AccountServiceImpl 创建了");
     }
-
+    @Override
     public void savaAccount() {
 
         //dao.sava();

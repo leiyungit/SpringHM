@@ -9,5 +9,8 @@
         <module name="spring_anno_ioc" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="spring_anno_ioc" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
