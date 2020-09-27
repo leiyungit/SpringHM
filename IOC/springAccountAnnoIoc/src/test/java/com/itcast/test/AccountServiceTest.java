@@ -22,18 +22,18 @@ public class AccountServiceTest {
     }
     @Test
     public void testSave(){
-//        Account account  = new Account();
-//        account.setName("eee");
-//        account.setMoney(1234.0f);
-//        ApplicationContext app = new ClassPathXmlApplicationContext("bean.xml");
-//        IAccountService accountService = app.getBean("accountService", IAccountService.class);
-//        accountService.saveAccount(account);
+        Account account  = new Account();
+        account.setName("eee");
+        account.setMoney(1234.0f);
+        ApplicationContext app = new ClassPathXmlApplicationContext("bean.xml");
+        IAccountService accountService = app.getBean("accountService", IAccountService.class);
+        accountService.saveAccount(account);
     }
     @Test
     public void testDelete(){
 
         ApplicationContext app = new ClassPathXmlApplicationContext("bean.xml");
         IAccountService accountService = app.getBean("accountService", IAccountService.class);
-        accountService.deleteAccount(10);
+        accountService.deleteAccount(7);
     }
 }

@@ -6,17 +6,18 @@ import com.itcast.domain.Account;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class AccountDaoImpl implements IAccountDao {
 
+    @Autowired
     private QueryRunner runner;
 
-    public void setRunner(QueryRunner runner) {
 
-        this.runner = runner;
-    }
 
     @Override
     public List<Account> findAllAccount() {
@@ -41,6 +42,7 @@ public class AccountDaoImpl implements IAccountDao {
     @Override
     public void saveAccount(Account account) {
         try{
+            System.out.println("执行了inster");
             runner.update("insert into account(name,money) values(?,?)", account.getName(),account.getMoney());
         }catch (Exception e){
             throw new RuntimeException(e);
