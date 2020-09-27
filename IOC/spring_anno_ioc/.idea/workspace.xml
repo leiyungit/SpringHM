@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c1407da-c400-4584-a755-6ceb77fbd503" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring_anno_ioc2/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_anno_ioc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_anno_ioc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itcast/dao/impl/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itcast/dao/impl/AccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itcast/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itcast/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring_anno_ioc2/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_anno_ioc2/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring_anno_ioc2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_anno_ioc2/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring_anno_ioc2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_anno_ioc2/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring_anno_ioc2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_anno_ioc2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring_anno_ioc2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_anno_ioc2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring_anno_ioc2/spring_anno_ioc2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_anno_ioc2/spring_anno_ioc2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring_anno_ioc2/src/main/java/com/itcast/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_anno_ioc2/src/main/java/com/itcast/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring_anno_ioc2/src/main/java/com/itcast/ui/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_anno_ioc2/src/main/java/com/itcast/ui/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springioc/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springioc/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springioc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springioc/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/itcast/service/impl/AccountServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="413">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#587#588#0" expanded="true" />
@@ -61,7 +33,7 @@
         <entry file="jar://C:/Java/jdk/jdk-8/src.zip!/javax/annotation/PreDestroy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="281">
-              <caret line="75" column="3" lean-forward="true" selection-start-line="75" selection-start-column="3" selection-end-line="75" selection-end-column="3" />
+              <caret line="75" column="3" selection-start-line="75" selection-start-column="3" selection-end-line="75" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
-              <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -240,7 +212,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601188605255" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601203883575" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -287,7 +259,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601187231366</updated>
-      <workItem from="1601187240138" duration="1193000" />
+      <workItem from="1601187240138" duration="1856000" />
     </task>
     <servers />
   </component>
@@ -310,13 +282,15 @@
     <history-entry file="UiTest_test01 - 2020.09.27 at 14h 36m 25s.xml">
       <configuration name="UiTest.test01" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UiTest_test01 - 2020.09.27 at 14h 36m 48s.xml">
+      <configuration name="UiTest.test01" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1193000" />
+    <option name="totallyTimeSpent" value="1856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -334,7 +308,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32934782" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32934782" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32934782" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -357,14 +331,14 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Java/jdk/jdk-8/src.zip!/javax/annotation/PreDestroy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
-          <caret line="75" column="3" lean-forward="true" selection-start-line="75" selection-start-column="3" selection-end-line="75" selection-end-column="3" />
+          <caret line="75" column="3" selection-start-line="75" selection-start-column="3" selection-end-line="75" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -374,7 +348,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itcast/service/impl/AccountServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#587#588#0" expanded="true" />
