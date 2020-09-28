@@ -4,10 +4,17 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="proxyAccountService" factory-bean="beanFactory" factory-method="getAccountService"></bean>
+    <!--配置beanFactory-->
+    <bean id="beanFactory" class="com.itcast.factory.BeanFactory">
+        <property name="txManage" ref="txManage"></property>
+        <!--<property name="accountService" ref="accountService"></property>-->
+        <property name="accountService" ref="proxyAccountService"></property>
+    </bean>
      <!--配置Service-->
     <bean id="accountService" class="com.itcast.service.impl.AccountServiceImpl">
         <property name="accountDao" ref="accountDao" ></property>
-        <property name="txManage" ref="transectionManage"></property>
+
     </bean>
     <bean id="accountDao" class="com.itcast.dao.impl.AccountDaoImpl">
         <property name="runner" ref="runner"></property>
@@ -28,7 +35,7 @@
     <bean id="connectionUtils" class="com.itcast.utils.ConnectionUtils">
         <property name="dataSource" ref="dataSource"></property>
     </bean>
-    <bean id="transectionManage" class="com.itcast.utils.TransectionManage">
+    <bean id="txManage" class="com.itcast.utils.TransectionManage">
         <property name="connectionUtils" ref="connectionUtils"></property>
     </bean>
 </beans>
