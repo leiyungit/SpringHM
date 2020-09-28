@@ -23,7 +23,7 @@ public class BeanFactory {
         this.accountService = accountService;
     }
     public IAccountService getAccountService() {
-        return Proxy.newProxyInstance(accountService.getClass().getClassLoader(),
+        return (IAccountService)Proxy.newProxyInstance(accountService.getClass().getClassLoader(),
                 accountService.getClass().getInterfaces(),
                 new InvocationHandler() {
                     @Override

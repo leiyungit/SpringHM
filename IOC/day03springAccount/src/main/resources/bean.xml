@@ -9,7 +9,7 @@
     <bean id="beanFactory" class="com.itcast.factory.BeanFactory">
         <property name="txManage" ref="txManage"></property>
         <!--<property name="accountService" ref="accountService"></property>-->
-        <property name="accountService" ref="proxyAccountService"></property>
+        <property name="accountService" ref="accountService"></property>
     </bean>
      <!--配置Service-->
     <bean id="accountService" class="com.itcast.service.impl.AccountServiceImpl">
