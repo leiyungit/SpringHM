@@ -7,6 +7,9 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
+/**
+ * 工厂，动态代理
+ */
 public class BeanFactory {
 
     private IAccountService accountService;
@@ -17,8 +20,8 @@ public class BeanFactory {
 
         this.txManage = txManage;
     }
-
-    public void setAccountService(IAccountService accountService) {
+    // jdk8 之后可以省略final
+    public final void setAccountService(IAccountService accountService) {
 
         this.accountService = accountService;
     }
@@ -28,7 +31,7 @@ public class BeanFactory {
                 (proxy, method, args) -> {
                     try {
                         Object rtValue = null;
-                        System.out.println("proxy....");
+                        //System.out.println("proxy....");
                         txManage.beginTansection();
                         rtValue = method.invoke(accountService, args);
                         txManage.commit();

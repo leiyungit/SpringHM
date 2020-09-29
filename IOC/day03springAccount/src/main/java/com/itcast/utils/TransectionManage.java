@@ -2,6 +2,9 @@ package com.itcast.utils;
 
 import java.sql.SQLException;
 
+/**
+ * 事务处理
+ */
 public class TransectionManage {
     private ConnectionUtils connectionUtils;
     // 注入

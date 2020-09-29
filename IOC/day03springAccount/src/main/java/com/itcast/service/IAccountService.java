@@ -4,6 +4,9 @@ import com.itcast.domain.Account;
 
 import java.util.List;
 
+/**
+ * 业务层接口
+ */
 public interface IAccountService {
 
     List<Account> findAllAccount();
