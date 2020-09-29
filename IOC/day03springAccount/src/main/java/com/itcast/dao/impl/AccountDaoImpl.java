@@ -22,6 +22,7 @@ public class AccountDaoImpl implements IAccountDao {
     private ConnectionUtils connectionUtils;
     // 注入
     public void setConnectionUtils(ConnectionUtils connectionUtils) {
+
         this.connectionUtils = connectionUtils;
     }
 

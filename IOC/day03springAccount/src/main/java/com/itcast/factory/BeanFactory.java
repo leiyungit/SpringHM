@@ -18,29 +18,26 @@ public class BeanFactory {
         this.txManage = txManage;
     }
 
-    public final void setAccountService(IAccountService accountService) {
+    public void setAccountService(IAccountService accountService) {
 
         this.accountService = accountService;
     }
     public IAccountService getAccountService() {
-        return (IAccountService)Proxy.newProxyInstance(accountService.getClass().getClassLoader(),
+        return (IAccountService) Proxy.newProxyInstance(accountService.getClass().getClassLoader(),
                 accountService.getClass().getInterfaces(),
-                new InvocationHandler() {
-                    @Override
-                    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+                (proxy, method, args) -> {
+                    try {
                         Object rtValue = null;
-                        try {
-                            System.out.println("proxy....");
-                            txManage.beginTansection();
-                            rtValue = method.invoke(accountService, args);
-                            txManage.commit();
-                            return rtValue;
-                        } catch (Exception e) {
-                            txManage.rollback();
-                            throw new RuntimeException(e);
-                        }finally {
-                            txManage.release();
-                        }
+                        System.out.println("proxy....");
+                        txManage.beginTansection();
+                        rtValue = method.invoke(accountService, args);
+                        txManage.commit();
+                        return rtValue;
+                    } catch (Exception e) {
+                        txManage.rollback();
+                        throw new RuntimeException(e);
+                    } finally {
+                        txManage.release();
                     }
                 });
     }
