@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       https://www.springframework.org/schema/aop/spring-aop.xsd
+">
+    <!--配置spring的Ioc，把service对象配置进来-->
+    <bean id="accountService" class="com.itcast.service.impl.AccountServiceImpl" ></bean>
+
+    <!--配置logger 通知-->
+    <bean id="logger" class="com.itcast.uitls.Logger"></bean>
+    <!--配置aop-->
+    <aop:config>
+        <aop:pointcut id="pt1" expression="execution(* com.itcast.service.*..*(..))"></aop:pointcut>
+
+        <!--配置切面,引用logger通知 -->
+        <aop:aspect id="logAdvice" ref="logger">
+            <!--配置通知类型，并且配置通知方法和切入点方法的关联-->
+            <aop:before method="befer" pointcut-ref="pt1"></aop:before>
+            <!--<aop:before method="befer" pointcut="execution(public void com.itcast.service.impl.AccountServiceImpl.saveAccount())"></aop:before>-->
+            <aop:after-returning method="afterReturn" pointcut-ref="pt1"></aop:after-returning>
+            <aop:after-throwing method="afterThrow" pointcut-ref="pt1"></aop:after-throwing>
+            <aop:after method="after" pointcut-ref="pt1"></aop:after>
+            <aop:around method="around" pointcut-ref="pt1"></aop:around>
+        </aop:aspect>
+    </aop:config>
+</beans>
