@@ -25,7 +25,7 @@
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <!--<property name="properties" value="jdbcConfig.properties"></property>-->
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql:///springdb"/>
+        <property name="jdbcUrl" value="jdbc:mysql:///ssm"/>
         <property name="user" value="root"/>
         <property name="password" value="123456"/>
     </bean>
