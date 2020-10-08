@@ -38,4 +38,23 @@
         <property name="basePackage" value="com.itcast.dao"/>
     </bean>
 
+
+    <!--配置Spring框架声明式事物管理-->
+    <!--配置事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--配置事务通知-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="find*" read-only="true"/>
+            <tx:method name="*" isolation="DEFAULT"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!--配置aop增强-->
+    <aop:config >
+        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.itcast.service.impl.*ServiceImpl.*(..))"/>
+    </aop:config>
 </beans>

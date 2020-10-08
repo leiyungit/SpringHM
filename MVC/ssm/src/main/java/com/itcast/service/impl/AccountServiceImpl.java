@@ -21,6 +21,8 @@ public class AccountServiceImpl implements IAccountService {
     }
 
     public void saveAccount(Account account) {
+
         System.out.println(" 业务层 saveAccount 执行了...");
+        accountDao.saveAccount(account);
     }
 }

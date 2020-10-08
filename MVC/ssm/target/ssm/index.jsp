@@ -13,5 +13,13 @@
 <body>
 
 <a href="account/findAll">测试</a>
+
+<hr/>
+<form action="account/save" method="post">
+    username：<input name="name" />
+    money:<input name="money" />
+    <input type="submit" value="save">
+</form>
+
 </body>
 </html>
