@@ -38,6 +38,13 @@ public class AccountController {
         return "list";
     }
 
+    /**
+     * 保存
+     * @param account
+     * @param request
+     * @param response
+     * @throws IOException
+     */
     @RequestMapping("/save")
     public void savAccount(Account account, HttpServletRequest request, HttpServletResponse response) throws IOException {
         System.out.println("表现层，保存账户信息。。。");
